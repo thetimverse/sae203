@@ -24,7 +24,7 @@
                 htmlentities($_POST['edition']);
                 afficherResultatRechercheEdition($co);
             } else {
-                header('form_recherche.php');
+                header('Location: form_recherche.php');
             }
             deconnexionBD($co);
         ?>

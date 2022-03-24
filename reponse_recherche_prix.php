@@ -1,4 +1,5 @@
 <?php 
+
     require 'debut.html.php';
 ?>
     <link rel="shortcut icon" href="images/ashoka.png" type="image">
@@ -24,7 +25,9 @@
                 filter_var($_POST['prix_maxi'], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_THOUSAND);
                 htmlentities($_POST['prix_maxi']);
                 afficherResultatRecherchePrix($co);
-            } 
+            } else {
+                header('Location: form_recherche.php');
+            }
             deconnexionBD($co);
         ?>
     </section>

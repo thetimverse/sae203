@@ -1,4 +1,10 @@
 <?php 
+    if (empty($_POST['perso'])){
+        header('Location: form_recherche.php');
+    } else {
+        filter_var($_POST['perso'], FILTER_SANITIZE_STRING);
+        htmlentities($_POST['perso']);
+    }
     require 'debut.html.php';
 ?>
     <link rel="shortcut icon" href="images/ashoka.png" type="image">
@@ -18,14 +24,8 @@
             require 'lib_crud.inc.php';
             $co=connexionBD();
 
-
-            if(!empty($_POST['perso'])) {
-                filter_var($_POST['perso'], FILTER_SANITIZE_STRING);
-                htmlentities($_POST['perso']);
-                afficherResultatRecherchePerso($co);
-            } else {
-                header('form_recherche.php');
-            }
+            afficherResultatRecherchePerso($co);
+            
             deconnexionBD($co);
         ?>
 
