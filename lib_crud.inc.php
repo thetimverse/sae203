@@ -366,7 +366,7 @@ function afficherResultatRecherche($bdd) {
     $req = "SELECT * FROM funkos 
             INNER JOIN types 
             ON funkos._type_id = types.type_id
-            WHERE type_media LIKE '%".$_POST['license']."%'";
+            WHERE type_media LIKE '%".$_POST['license']."%' OR funko_nom LIKE '%".$_POST['license']."%'";
             echo '<article class="search-result"><h3>Votre recherche : </h3>'."\n".'<br><h4> '.$_POST['license'].'</h4></article>';
     try {
         $resultat = $bdd->query($req);
@@ -454,7 +454,7 @@ function afficherResultatRecherchePerso($bdd) {
     $req = "SELECT * FROM funkos 
             INNER JOIN types 
             ON funkos._type_id = types.type_id
-            WHERE funko_nom LIKE '%".$_POST['perso']."%'";
+            WHERE funko_nom LIKE '%".$_POST['perso']."%' OR type_media LIKE '%".$_POST['perso']."%'";
             echo '<article class="search-result"><h3>Votre recherche : </h3>'."\n".'<br><h4> '.$_POST['perso'].'</h4></article>';
     try {
         $resultat = $bdd->query($req);
