@@ -392,7 +392,7 @@ tbody {
 }
 
 table img {
-    width: 75px;
+    width: 85px;
 }
 
 .image-table {
@@ -544,6 +544,10 @@ footer {
         text-shadow: 3px 3px 1px #cf0000;
         transform: translateY(-4px);
         box-shadow: 5px 5px 1px #cf0000;
+    }
+    tbody td {
+        font-weight: 900;
+        font-size: 17px!important;
     }
     .actions {
         color: #1f91fc!important;
