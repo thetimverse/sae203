@@ -531,18 +531,26 @@ footer {
     }
     .admin>.bouton {
         margin: 0 auto!important;
-        font-size: 1.6em!important;
+        font-size: 1.5em!important;
         width: 30%;
         background-color: rgba(0, 0, 0, .9);
         border: #cf0000 2px solid;
         transition: all .3s ease;
-        color: #cf0000;
+        color: #fff;
         text-shadow: none;
     }
     .admin>.bouton:hover {
-        color: #cf0000;
-        text-shadow: none;
+        color: #fff;
+        text-shadow: 3px 3px 1px #cf0000;
         transform: translateY(-4px);
         box-shadow: 5px 5px 1px #cf0000;
+    }
+    .actions {
+        color: #1f91fc!important;
+        text-shadow: none!important;
+        text-decoration: underline!important;
+    }
+    .suppr {
+        color: #cf0000!important;
     }
 }
