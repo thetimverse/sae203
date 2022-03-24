@@ -1,0 +1,1 @@
+<footer>&copy 2022 - IUT de Troyes</footer>
