@@ -26,6 +26,7 @@
 	        deconnexionBD($co);
 	    ?>
     <a class="bouton" href="table1_gestion.php">Gestion des POP!</a><br>
+    <a class="bouton" href="../listing.php">Catalogue</a><br>
 
 </div>
 
