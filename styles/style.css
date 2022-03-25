@@ -15,7 +15,7 @@
 }
 
 body {
-    background: url(../images/long-fond2.png) repeat;
+    background: url(../images/long-fond1.png) repeat;
     background-size: 100%;
 }
 
@@ -71,7 +71,6 @@ nav ul {
 /* body */
 
 main {
-    background: url(../images/long-fond2.png) cover;
     height: auto;
 }
 
@@ -136,7 +135,7 @@ p {
     color: #fff;
     border: #cf0000 1px solid;
     text-align: center;
-    padding: 5% 0;
+    padding: auto 0;
     transition: all .3s ease;
 }
 
