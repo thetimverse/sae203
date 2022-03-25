@@ -137,11 +137,13 @@ p {
     text-align: center;
     padding: auto 0;
     transition: all .3s ease;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
 }
 
 #buttons>.buttons {
     padding: 0;
-    padding-top: 11px;
     border-radius: 0;
     box-shadow: 5px 5px 1px #000;
     border: #000 2px solid;
